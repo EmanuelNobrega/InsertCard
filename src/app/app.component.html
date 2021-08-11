@@ -1,4 +1,4 @@
-<p>{{titulo}}</p>
+<h1>{{titulo}}</h1>
 
 <mat-form-field class="mat-form-principal" appearance="fill">
   <mat-label>Nome</mat-label>
@@ -16,7 +16,7 @@
 </mat-form-field>
 
 <button mat-raised-button mat-icon-button color="primary" (click)="inserirUsuario()">
-  <mat-icon>add</mat-icon>
+  <mat-icon class="iconButton">add</mat-icon>
 </button>
 
 <br>
@@ -24,11 +24,22 @@
 <mat-card *ngFor="let usuario of usuarios" class="mat-card-simples">
   <mat-card-header>
     <mat-card-title>
-      <mat-icon>person</mat-icon>{{usuario.nome}}
+      <mat-icon>person</mat-icon>
+      <p>{{usuario.nome}}</p>
     </mat-card-title>
-    <mat-card-subtitle *ngIf="usuario.cpf">CPF: {{usuario.cpf}} Idade: {{usuario.idade}}</mat-card-subtitle>
+    <mat-card-subtitle class="subTitle" *ngIf="usuario.cpf">
+      <h5>
+        CPF: <p>{{usuario.cpf}}</p>
+      </h5>
+      <h5>
+        Idade: <p>{{usuario.idade}}</p>
+      </h5>
+    </mat-card-subtitle>
+
   </mat-card-header>
   <mat-card-content>
-    Blablabla blaBlablabla blaBlablabla blaBlablabla blaBlablabla blaBlablabla blaBlablabla bla
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+    type specimen book.
   </mat-card-content>
 </mat-card>

@@ -4,6 +4,52 @@
   margin-top: 15px;
 }
 
-.mat-form-principal {
+.mat-form-principal,
+h1 {
   margin-left: 10px;
+}
+
+button {
+  margin-left: 5px;
+  line-height: 50px;
+}
+
+.iconButton {
+  margin-bottom: 10px;
+}
+
+mat-card-title {
+  display: flex;
+  mat-icon {
+    font-size: 40px;
+    margin-left: -22px;
+    margin-bottom: 15px;
+  }
+  p {
+    margin: 16px 0px 0px 20px;
+  }
+}
+
+.subTitle {
+  color: rgb(115, 115, 115);
+  display: flex;
+  margin: 0px 0px 0px -16px;
+  h5 {
+    display: flex;
+    p {
+      font-size: 12px;
+      margin-left: 5px;
+      color: rgb(150, 150, 150);
+      text-decoration-line: underline;
+    }
+    margin: 0;
+  }
+  h5:nth-child(2n) {
+    margin: 0px 0px 0px 22px;
+  }
+}
+
+mat-card-content {
+  font-size: 12px;
+  color: rgb(75, 75, 75);
 }
